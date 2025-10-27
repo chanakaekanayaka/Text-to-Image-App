@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
     const [user , setUser] = useState(null);
+    const navigate =useNavigate();
 
   return (
     <div className='flex item-center justify-between py-4'>
@@ -15,9 +16,9 @@ const Navbar = () => {
         user ? 
         <div ></div>
         :
-        <div className='flex item-center gap-4 py-7 px-7  '>
-            <p className='text-XL'>pricing</p>
-            <button>Login</button>
+        <div className='flex item-center gap-4 py-7 px-10  '>
+            <p onClick={()=>navigate('/buy')} className='text-XL cursor-pointer px-10 text-2xl hover:text-blue-500 px-10 rounded-full'>pricing</p>
+            <button className='-400 text-2xl hover:bg-blue-800  rounded-full px-9'>Login</button>
         </div>
         }
         
