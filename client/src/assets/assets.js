@@ -9,9 +9,9 @@ import sample_img_1 from './sample_img_1.png'
 import sample_img_2 from './sample_img_2.png'
 import profile_img_1 from './profile_img_1.png'
 import profile_img_2 from './profile_img_2.png'
-import step_icon_1 from './step_icon_1.svg'
-import step_icon_2 from './step_icon_2.svg'
-import step_icon_3 from './step_icon_3.svg'
+import step_icon_1 from './step_icon_1.png'
+import step_icon_2 from './step_icon_2.png'
+import step_icon_3 from './step_icon_3.png'
 import email_icon from './email_icon.svg'
 import lock_icon from './lock_icon.svg'
 import cross_icon from './cross_icon.svg'
@@ -41,7 +41,7 @@ export const stepsData = [
     {
       title: 'Describe Your Vision',
       description: 'Type a phrase, sentence, or paragraph that describes the image you want to create.',
-      icon: step_icon_1,
+      icon: step_icon_3,
     },
     {
       title: 'Watch the Magic',
@@ -51,7 +51,8 @@ export const stepsData = [
     {
       title: 'Download & Share',
       description: 'Instantly download your creation or share it with the world directly from our platform.',
-      icon: step_icon_3,
+      
+      icon: step_icon_1,
     },
   ];
 
