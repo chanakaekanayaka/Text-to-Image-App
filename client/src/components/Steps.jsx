@@ -5,7 +5,7 @@ const Steps = () => {
   return (
     <div className='flex flex-col justify-center items-center text-center my-[40px] gap-1 '>
 
-        <h1 className='text-3xl sm:text-4xl font-semibold mb-3 mt-1  '>How it works</h1>
+        <h1 className='text-3xl sm:text-4xl font-semibold mb-3 mt-1 '>How it works</h1>
         <p className='text-lg text-gray-600 mb-10'>Transform words into stunning words</p>
 
         <div className=''>

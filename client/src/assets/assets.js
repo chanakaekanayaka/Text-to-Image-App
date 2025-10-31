@@ -5,7 +5,7 @@ import instagram_icon from './instagram_icon.svg'
 import twitter_icon from './twitter_icon.svg'
 import star_icon from './star_icon.svg'
 import rating_star from './rating_star.svg'
-import sample_img_1 from './sample_img_1.png'
+import sample_img_1 from './sample_img_1.jpg'
 import sample_img_2 from './sample_img_2.png'
 import profile_img_1 from './profile_img_1.png'
 import profile_img_2 from './profile_img_2.png'
@@ -18,6 +18,7 @@ import cross_icon from './cross_icon.svg'
 import star_group from './star_group.png'
 import credit_star from './credit_star.svg'
 import profile_icon from './profile_icon.png'
+
 
 export const assets = {
     logo,
