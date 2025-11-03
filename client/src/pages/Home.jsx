@@ -15,7 +15,7 @@ const Home = () => {
       <Description></Description>
       <Feedback></Feedback>
       <GenerateBtn></GenerateBtn>
-      <Footer></Footer>
+      
      
     </div>
   )
