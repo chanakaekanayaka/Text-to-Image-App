@@ -4,10 +4,11 @@ import { AppContext } from '../context/AppContext';
 
 const Navbar = () => {
 
-    //const {user} = useContext(AppContext)
+    const {user,setShowLogin} = useContext(AppContext)
 
-    const [user , setUser] = useState(true);
+    //const [user , setUser] = useState(false);
     const navigate =useNavigate();
+    
 
   return (
     <div className='flex item-center justify-between py-4 '>
@@ -42,7 +43,7 @@ const Navbar = () => {
         :
         <div className='flex item-center gap-4 py-7 px-10  '>
             <p onClick={()=>navigate('/buy')} className='text-2xl   cursor-pointer px-10  hover:text-blue-500 px-10 rounded-full font-extrabold'>pricing</p>
-            <button className='  hover:bg-blue-800  text-2xl font-extrabold rounded-full px-9'>Login</button>
+            <button className='  hover:bg-blue-800  text-2xl font-extrabold rounded-full px-9' onClick={()=>setShowLogin(true)} >Login</button>
         </div>
         }
         
