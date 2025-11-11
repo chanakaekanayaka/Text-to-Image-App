@@ -1,15 +1,26 @@
 import React from 'react'
 import { assets, testimonialsData } from '../assets/assets'
 
+import { motion } from "motion/react"
+
 const Feedback = () => {
   return (
-    <div className='flex flex-col justify-center items-center text-center my-[70px] gap-1 '>
+    <motion.div 
+    initial={{opacity:0.2,y:100}}
+    transition={{duration:1}}
+    whileInView={{opacity:1,y:0}}
+    viewport={{once:true}}
+    className='flex flex-col justify-center items-center text-center my-[70px] gap-1 '>
 
         <h1 className='text-3xl sm:text-4xl font-semibold mb-3 mt-1'>Turn Your Experience Into Words</h1>
         <p className='text-lg text-gray-600 mb-10'>"image-to-text" theme, mirroring the style of your original phrase.</p>
 
          
-        <div className='flex flex-wrap gap-9   justify-center items-center'>
+        <div 
+        initial={{opacity:0,y:20}}
+        transition={{delay:0.4,duration:1}}
+        animate={{opacity:1,y:0}}
+        className='flex flex-wrap gap-9   justify-center items-center'>
             {testimonialsData.map((testimonial,index)=>(
                 <div key={index} className=' hover:bg-blue-950 rounded-2xl  mt-5 hover:scale-105 duration-300 shadow-xl shadow-4xl p-12  w-60 m-auto cursor-pointer  transition-all' >
                     <div className='flex flex-col items-center ' >
@@ -34,7 +45,7 @@ const Feedback = () => {
 
         </div>
       
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,9 +1,15 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { motion } from "framer-motion"
 
 const Description = () => {
   return (
-    <div className='flex flex-col justify-center items-center text-center my-[70px] gap-1 '>
+    <motion.div 
+    initial={{opacity:0.2,y:100}}
+    transition={{duration:1}}
+    whileInView={{opacity:1,y:0}}
+    viewport={{once:true}}
+    className='flex flex-col justify-center items-center text-center my-[70px] gap-1 '>
 
         <h1 className='text-3xl sm:text-4xl font-semibold mb-3 mt-1'>Create AI images</h1>
         <p className='text-lg text-gray-600 mb-10'>Turn your imagination into visuals</p>
@@ -26,7 +32,7 @@ const Description = () => {
                                         With NextGenCV, your next career opportunity is only one perfect resume away.</p>
         </div>
       
-    </div>
+    </motion.div>
 
     
   )
