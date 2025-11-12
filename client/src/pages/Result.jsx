@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { assets } from '../assets/assets'
+import { motion } from "motion/react"
+
 
 const Result = () => {
 
@@ -15,14 +17,18 @@ const Result = () => {
   return (
     <div>
 
-      <form  onSubmit={onSubmitHandler} className='flex flex-col min-h-[90vh] justify-center items-center'>
+      <motion.form  onSubmit={onSubmitHandler} className='flex flex-col min-h-[90vh] justify-center items-center'
+      initial={{opacity:0.3,y:200}}
+      transition={{duration:1}}
+      whileInView={{opacity:1,y:0}}
+      viewport={{once:true}}>
         <div>
           <div className='relative'>
             <img src={image} className='max-w-sm rounded'></img>
             <span className={`absolute bottom-0 left-0 h-2 bg-blue-500 ${loading ? 'w-full transition-all duration-[10s]' :'w-0'}`}></span>
 
           </div>
-          <p className={!loading ? 'hidden' : ''}>Loading.....</p>
+          <p className={!loading ? 'hidden' : ''}>Loading.....</p>  
         </div>
 
         {!isImageLoaded && 
@@ -48,7 +54,7 @@ const Result = () => {
 
         
 
-      </form> 
+      </motion.form> 
 
         
       

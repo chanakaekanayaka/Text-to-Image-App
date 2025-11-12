@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
 import { assets, plans } from '../assets/assets'
+import { motion } from "motion/react"
 
 const BuyCredit = () => {
   const [user , setUSer] = useState(null)
 
   return (
-    <div className='min-h-[80hv] text-center pt-16 mb-10 '>
+    <motion.div className='min-h-[80hv] text-center pt-16 mb-10 '
+    initial={{opacity:0.3,y:200}}
+    transition={{duration:1}}
+    whileInView={{opacity:1,y:0}}
+    viewport={{once:true}}>
 
       
       <h1 className='text-center text-3xl font-medium mb-6 sm:mb-10'>Choose the plan</h1>
@@ -29,7 +34,7 @@ const BuyCredit = () => {
 
         
       
-    </div>
+    </motion.div>
   )
 }
 
