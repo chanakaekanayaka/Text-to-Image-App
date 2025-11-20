@@ -33,7 +33,7 @@ const GenerateBtn = () => {
         initial={{opacity:0,y:-20}}
         transition={{delay:0.7,duration:0.8}}
         animate={{opacity:1,y:0}}
-        className='inline-flex items-center gap-2 px-12 py-3 bg-blue-950 hover:bg-blue-300 hover:text-black rounded-2xl cursor-pointer mt-5 hover:scale-105 duration-300 shadow-3xl text-xl'>Generate Image
+        className='inline-flex  items-center gap-2 px-12 py-3 bg-blue-950 hover:bg-blue-300 hover:text-black rounded-2xl cursor-pointer mt-5 hover:scale-105 duration-300 shadow-3xl text-xl'>Generate Image
             <img src='aibtn.png' className='w-10  transition-transform duration-700  hover:rotate-[360deg]'></img>
         </motion.button>
 
