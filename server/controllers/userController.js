@@ -71,6 +71,8 @@ const loginUser = async (req,res)=>{
     }
 }
 
+{/*get user credit*/}
+
 const userCredits = async (req,res)=>{
 
     try{
